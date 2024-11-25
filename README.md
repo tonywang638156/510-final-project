@@ -56,9 +56,48 @@ Incorporating sentiment features enhances model accuracy:
 ---
 ## Exploratory Data Analysis
 
-- Correlation analysis reveals significant relationships between sentiment scores and stock price movements.
-- Visualizations show how sentiment trends align with stock price fluctuations.
-- Statistical summaries confirm the added value of sentiment features in prediction.
+The Exploratory Data Analysis (EDA) revealed key insights into the relationship between stock prices, sentiment trends, and other financial indicators. Below are the highlights:
+
+### 1. Correlation Analysis
+![Correlation Matrix](./correlation_matrix.png)
+
+The correlation matrix highlights significant relationships between variables:
+- Positive correlations were observed between **Adjusted Close Price** and indicators like **Exponential Moving Average (EMA)** and **RSI (Relative Strength Index)**.
+- Sentiment scores (from titles and descriptions) exhibit a moderate positive correlation with **Adjusted Close Price**, indicating their potential predictive value in stock price movement.
+
+---
+
+### 2. Distribution of Sentiment Scores
+![Sentiment Score Distribution](./sentiment_score_distribution.png)
+
+- The histogram displays the frequency of sentiment scores derived from news titles and descriptions.
+- **Negative sentiment (-1)** is more frequent than **positive sentiment (1)** in this dataset.
+- The distribution suggests that sentiment data is well-balanced, providing adequate variability for analysis.
+
+---
+
+### 3. Stock Prices by Sentiment Levels
+#### Title Sentiment
+![Stock Prices by Title Sentiment](./stock_prices_by_title_sentiment.png)
+
+- Positive sentiment in titles tends to align with higher adjusted close prices.
+- Stocks with negative sentiment show wider variability and generally lower prices.
+
+#### Description Sentiment
+![Stock Prices by Description Sentiment](./stock_prices_by_description_sentiment.png)
+
+- Similar to title sentiment, positive sentiment in descriptions correlates with higher adjusted close prices.
+- The variability of prices is slightly lower compared to title sentiment, possibly due to differences in the nature of the information conveyed in descriptions.
+
+---
+
+### Key Takeaways
+1. **Sentiment Trends and Stock Prices**: Sentiment scores (both from titles and descriptions) are positively correlated with stock prices, supporting the hypothesis that market sentiment impacts financial performance.
+2. **Variability in Prices by Sentiment**: Stocks linked to positive sentiment show a narrower range of price fluctuations, whereas negative sentiment corresponds to wider variability.
+3. **Predictive Potential**: The correlation and distribution of sentiment scores suggest that incorporating sentiment analysis alongside technical indicators could enhance predictive accuracy for stock price forecasting.
+
+The visualizations and analyses validate the importance of integrating qualitative sentiment features into quantitative financial models.
+
 
 ---
 

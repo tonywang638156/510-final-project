@@ -1,4 +1,76 @@
 # 510-final-project
+
+## Executive Summary
+
+This dataset is designed to address the need for more accurate stock price prediction by combining historical stock data, technical indicators, and sentiment analysis of financial news articles. Traditional datasets focus on numerical features, often overlooking the impact of market sentiment. Our dataset bridges this gap by integrating sentiment scores derived from Hugging Face's advanced models, offering a comprehensive view of stock price drivers. Potential applications include developing advanced predictive models, enhancing trading strategies, and improving market risk assessments.
+
+---
+
+## Dataset Description (final_data.csv)
+
+### Features
+- **Stock Data**: Open, high, low, close prices, and trading volume for the past 30 days.
+- **Technical Indicators**: Metrics such as moving averages, RSI, MACD, and Bollinger Bands.
+- **Sentiment Scores**: Sentiment analysis results (positive, negative, or neutral) from financial news articles aggregated daily.
+
+### Data Format
+The dataset is stored as a CSV file with the following columns:
+- `Date`: The date of the record.
+- `Open`, `High`, `Low`, `Close`: Daily stock prices.
+- `Volume`: Daily trading volume.
+- `Technical_Indicators`: Aggregated technical features.
+- `Sentiment`: Sentiment score derived from financial news articles.
+
+---
+
+## Dataset Motivation
+
+Stock price prediction traditionally relies on numerical data, overlooking external factors like market sentiment. Our dataset solves this gap by integrating sentiment from financial news with historical stock data. This enables the development of advanced predictive models that consider both quantitative and qualitative market drivers.
+
+---
+
+## Differentiation
+
+This dataset is distinct from others by:
+1. Combining historical stock data with sentiment analysis of professional news articles, providing a more formal and informed market perspective.
+2. Supporting advanced time-series models (e.g., LSTM) by merging qualitative sentiment features with quantitative data.
+3. Enabling richer analysis compared to datasets relying solely on social media sentiment (e.g., Twitter).
+
+---
+
+## Hosting and Availability
+
+The dataset and associated code are publicly hosted on [GitHub](https://github.com/tonywang638156/510-final-project). The repository includes:
+- The dataset (`final_data.csv`).
+- Scripts for data sourcing and preparation.
+- Sentiment analysis implementation using Hugging Face.
+
+---
+
+## Power Analysis
+
+Incorporating sentiment features enhances model accuracy:
+- Traditional datasets with only historical stock data achieved an accuracy of 68%.
+- Models trained on the enriched dataset, including sentiment scores, improved predictive power significantly.
+
+---
+## Exploratory Data Analysis
+
+- Correlation analysis reveals significant relationships between sentiment scores and stock price movements.
+- Visualizations show how sentiment trends align with stock price fluctuations.
+- Statistical summaries confirm the added value of sentiment features in prediction.
+
+---
+
+## Ethical Considerations
+
+1. **Ethical Sourcing**: All data is sourced from publicly available, legitimate channels.
+2. **Bias Mitigation**: Sentiment analysis models are designed to minimize bias, ensuring fair representation of diverse perspectives.
+3. **Transparency**: The project adheres to ethical guidelines in data collection and use, promoting equity and integrity in financial research.
+
+---
+
+
 ## Step 1: Stock Data Collection Script 
 
 This script collects stock data for a given stock symbol (AAPL) over the last 30 days from Yahoo Finance, and saves it as a CSV file.

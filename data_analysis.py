@@ -30,18 +30,6 @@ plt.title('Correlation Matrix')
 plt.savefig('correlation_matrix.png')  # Save as PNG
 plt.close()
 
-# Visualization: Sentiment trends vs. stock price
-plt.figure(figsize=(12, 6))
-plt.plot(analysis_data['date'], analysis_data['Adj Close'], label='Adj Close Price', color='blue')
-plt.scatter(analysis_data['date'], analysis_data['title_sentiment_hf'], label='Title Sentiment', color='red', alpha=0.6)
-plt.scatter(analysis_data['date'], analysis_data['description_sentiment_hf'], label='Description Sentiment', color='green', alpha=0.6)
-plt.title('Stock Prices and Sentiment Trends')
-plt.xlabel('Date')
-plt.ylabel('Values')
-plt.legend()
-plt.savefig('stock_prices_and_sentiment_trends.png')  # Save as PNG
-plt.close()
-
 # Visualization: Distribution of sentiment scores
 plt.figure(figsize=(10, 5))
 sns.histplot(analysis_data['title_sentiment_hf'], bins=3, kde=False, label='Title Sentiment', color='red')

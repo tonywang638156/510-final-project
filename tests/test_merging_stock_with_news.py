@@ -3,6 +3,14 @@
 import unittest
 import pandas as pd
 import os
+import sys
+
+# Add the project root directory to sys.path
+current_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.abspath(os.path.join(current_dir, '..'))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+
 
 class TestMergingStockWithNews(unittest.TestCase):
     def setUp(self):

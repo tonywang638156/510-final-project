@@ -1,5 +1,11 @@
 # 510-final-project
 
+## License
+This dataset is released under the **CC0: Public Domain** license, meaning it is free for use in both personal and commercial projects.
+
+## Access the Dataset
+[Click here to access the dataset on Kaggle](https://www.kaggle.com/datasets/tonywangll/stock-price-prediction-with-sentiments/data).
+
 ## Executive Summary
 
 This dataset is designed to address the need for more accurate stock price prediction by combining historical stock data, technical indicators, and sentiment analysis of financial news articles. Traditional datasets focus on numerical features, often overlooking the impact of market sentiment. Our dataset bridges this gap by integrating sentiment scores derived from Hugging Face's advanced models, offering a comprehensive view of stock price drivers. Potential applications include developing advanced predictive models, enhancing trading strategies, and improving market risk assessments.

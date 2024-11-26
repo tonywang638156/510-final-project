@@ -1,6 +1,15 @@
 import unittest
 from unittest.mock import patch
 from sentiment_analysis import get_sentiment_huggingface
+import sys
+import os
+
+# Add the project root directory to sys.path
+current_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.abspath(os.path.join(current_dir, '..'))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+
 
 class TestSentimentAnalysis(unittest.TestCase):
     def test_positive_sentiment(self):
